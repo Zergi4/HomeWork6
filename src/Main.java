@@ -24,8 +24,14 @@ public class Main {
         }
         System.out.println(" ");
         int vklad = 29000;
+        int total = 0;
         for (int i = 1; i <= 12; i++) {
             System.out.println("Месяц " + i + ", сумма накоплений равна " + (i*vklad));
+        }
+        for (int i = 0; i < 12; i++) {
+            total = total + total/100;
+            total = total + vklad;
+            System.out.println("Месяц " + (i+1) + ", сумма накоплений равна " + total);
         }
     }
 }
